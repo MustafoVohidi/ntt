@@ -1,0 +1,73 @@
+{
+    "0": {
+        "name": "folder 1 level 1",
+        "id": 1,
+        "child": [
+            {
+                "name": "level 2",
+                "id": 11,
+                "child": [
+                    {
+                        "name": "level3",
+                        "id": 111,
+                        "child": []
+                    }
+                ]
+            }
+        ]
+    },
+    "1": {
+        "name": "folder 2 level 1",
+        "id": 2,
+        "child": [
+            {
+                "name": "level 2",
+                "id": 21,
+                "child": [
+                    {
+                        "name": "level3",
+                        "id": 211,
+                        "child": []
+                    }
+                ]
+            }
+        ]
+    },
+    "length": 2,
+    "default": [
+        {
+            "name": "folder 1 level 1",
+            "id": 1,
+            "child": [
+                {
+                    "name": "level 2",
+                    "id": 11,
+                    "child": [
+                        {
+                            "name": "level3",
+                            "id": 111,
+                            "child": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "folder 2 level 1",
+            "id": 2,
+            "child": [
+                {
+                    "name": "level 2",
+                    "id": 21,
+                    "child": [
+                        {
+                            "name": "level3",
+                            "id": 211,
+                            "child": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

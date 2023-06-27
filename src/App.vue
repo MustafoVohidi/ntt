@@ -1,30 +1,22 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div class="root-application">
+    <button @click="openModal">Открыть</button>
+    <AppModal v-if="isOpenModal" @close="closeModal" :title="'Модальное окно'">
+      <TreeModel @close="closeModal"></TreeModel>
+    </AppModal>
+  </div>
 </template>
+<script setup>
+import AppModal from "@/components/AppModal.vue";
+import TreeModel from "@/views/TreeModel.vue";
+import { ref } from "vue";
+const isOpenModal = ref(true)
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+const closeModal = () => {
+  isOpenModal.value = false
 }
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+const openModal = () => {
+  isOpenModal.value = true
 }
-</style>
+</script>
+<style lang="scss"></style>
